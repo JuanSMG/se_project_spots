@@ -15,12 +15,115 @@
   </head>
   <body>
     <div class="page">
-      <header class="header"></header>
+      <header class="header">
+        <img
+          src="./images/spots_logo.svg"
+          alt="Spot logo"
+          class="header__logo"
+        />
+      </header>
       <main class="content">
-        <section class="profile">Juan gonzalez</section>
-        <section class="cards"></section>
+        <section class="profile page__sections">
+          <img
+            src="./images/avatar.jpg"
+            alt="Photo of Bessie Coleman"
+            class="profile__avatar"
+          />
+          <div class="profile__container">
+            <h1 class="profile__heading">Bessie Coleman</h1>
+            <p class="profile__discription">Civil Aviator</p>
+            <button type="button" class="profile__edit-button">
+              <img
+                src="./images/edit_Icon.svg"
+                alt="edit icon"
+                class="button__edit-icon"
+              />Edit Profile
+            </button>
+          </div>
+          <button type="button" class="profile__add-button">
+            <img
+              src="./images/plus_icon.svg"
+              alt="add icon"
+              class="button__icon"
+            />New Post
+          </button>
+        </section>
+        <section class="cards page__sections">
+          <ul class="cards__list">
+            <li class="card">
+              <img
+                src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg"
+                alt="photo of Val Thorens"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__discription">Val Thorens</h2>
+                <button type="button" class="card__heart-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/2-photo-by-ceiline-from-pexels.jpg"
+                alt="photo of Val Thorens"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__discription">Restaurant terrace</h2>
+                <button type="button" class="card__heart-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg"
+                alt="photo of Val Thorens"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__discription">An outdoor cafe</h2>
+                <button type="button" class="card__heart-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/4-photo-by-maurice-laschet-from-pexels.jpg"
+                alt="photo of Val Thorens"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__discription">
+                  A very long bridge, over the forest
+                </h2>
+                <button type="button" class="card__heart-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
+                alt="photo of Val Thorens"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__discription">Tunnel with morning light</h2>
+                <button type="button" class="card__heart-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg"
+                alt="photo of Val Thorens"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__discription">Mountain house</h2>
+                <button type="button" class="card__heart-button"></button>
+              </div>
+            </li>
+          </ul>
+        </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <p class="footer__copyright">2023 © Spots</p>
+      </footer>
     </div>
   </body>
 </html>
