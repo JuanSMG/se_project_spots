@@ -23,4 +23,6 @@ Juan Gonzalez
 ![Image of desired hover states](./images/ComponentsRM-1.png)![Screenshot of Desktop veiw of project](./images/project_3_RMSS.jpg)![Screenshot of Mobile veiw of project](./images/project_3_RMSS2.jpg)
 The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
 
+MY link https://juansmg.github.io/se_project_spots/
+
 Good luck and have fun!
