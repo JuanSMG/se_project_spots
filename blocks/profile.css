@@ -56,6 +56,10 @@
   cursor: url("../images/curser_hand.svg"), default;
 }
 
+.profile__button-editicon {
+  margin-right: 8px;
+}
+
 .profile__add-button {
   margin-left: auto;
   margin-top: auto;
@@ -76,6 +80,12 @@
 .profile__add-button:hover {
   opacity: 0.8;
   cursor: url("../images/curser_hand.svg"), default;
+}
+
+.profile__button-icon {
+  margin-right: 8px;
+  width: 12px;
+  height: 12px;
 }
 
 .profile__discription {
