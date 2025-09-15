@@ -48,12 +48,10 @@
   opacity: 0.7;
   max-width: 108px;
   width: 100%;
-  cursor: url("../images/curser_hand.svg"), default;
 }
 
 .profile__edit-button:hover {
   opacity: 100%;
-  cursor: url("../images/curser_hand.svg"), default;
 }
 
 .profile__button-editicon {
@@ -68,18 +66,18 @@
   background-color: #212121;
   color: #fcf5e5;
   border-radius: 8px;
-  font-family: Poppings;
+  font-family: Poppins;
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
   padding: 18px 32px;
   border: none;
-  cursor: url("../images/curser_hand.svg"), default;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .profile__add-button:hover {
   opacity: 0.8;
-  cursor: url("../images/curser_hand.svg"), default;
 }
 
 .profile__button-icon {
