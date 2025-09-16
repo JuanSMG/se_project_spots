@@ -48,6 +48,7 @@
   opacity: 0.7;
   max-width: 108px;
   width: 100%;
+  cursor: pointer;
 }
 
 .profile__edit-button:hover {
@@ -74,6 +75,7 @@
   border: none;
   display: inline-block;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .profile__add-button:hover {
