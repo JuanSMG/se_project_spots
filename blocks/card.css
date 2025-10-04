@@ -2,9 +2,9 @@
   max-width: 413px;
 }
 
-.card__discription {
+.card__description {
   margin: 0;
-  font-family: "Poppins";
+  font-family: "Poppins", Arial, sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;

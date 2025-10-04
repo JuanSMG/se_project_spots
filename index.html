@@ -57,7 +57,7 @@
                 class="card__image"
               />
               <div class="card__content">
-                <h2 class="card__discription">Val Thorens</h2>
+                <h2 class="card__description">Val Thorens</h2>
                 <button type="button" class="card__heart-button"></button>
               </div>
             </li>
@@ -68,7 +68,7 @@
                 class="card__image"
               />
               <div class="card__content">
-                <h2 class="card__discription">Restaurant terrace</h2>
+                <h2 class="card__description">Restaurant terrace</h2>
                 <button type="button" class="card__heart-button"></button>
               </div>
             </li>
@@ -79,7 +79,7 @@
                 class="card__image"
               />
               <div class="card__content">
-                <h2 class="card__discription">An outdoor cafe</h2>
+                <h2 class="card__description">An outdoor cafe</h2>
                 <button type="button" class="card__heart-button"></button>
               </div>
             </li>
@@ -90,7 +90,7 @@
                 class="card__image"
               />
               <div class="card__content">
-                <h2 class="card__discription">
+                <h2 class="card__description">
                   A very long bridge, over the forest
                 </h2>
                 <button type="button" class="card__heart-button"></button>
@@ -103,7 +103,7 @@
                 class="card__image"
               />
               <div class="card__content">
-                <h2 class="card__discription">Tunnel with morning light</h2>
+                <h2 class="card__description">Tunnel with morning light</h2>
                 <button type="button" class="card__heart-button"></button>
               </div>
             </li>
@@ -114,7 +114,7 @@
                 class="card__image"
               />
               <div class="card__content">
-                <h2 class="card__discription">Mountain house</h2>
+                <h2 class="card__description">Mountain house</h2>
                 <button type="button" class="card__heart-button"></button>
               </div>
             </li>
@@ -126,7 +126,11 @@
       </footer>
       <div class="modal" id="edit-profile-modal">
         <div class="modal__container">
-          <button type="button" class="modal__close-button"></button>
+          <button
+            type="button"
+            class="modal__close-button"
+            aria-label="Close modal"
+          ></button>
           <h2 class="modal__heading">Edit profile</h2>
           <form class="modal__form">
             <label for="profile-name-input" class="modal__label"
@@ -151,7 +155,11 @@
       </div>
       <div class="modal" id="new-post-modal">
         <div class="modal__container">
-          <button type="button" class="modal__close-button"></button>
+          <button
+            type="button"
+            class="modal__close-button"
+            aria-label="Close modal"
+          ></button>
           <h2 class="modal__heading">New post</h2>
           <form class="modal__form">
             <label for="profile-image-input" class="modal__label"
@@ -175,6 +183,6 @@
         </div>
       </div>
     </div>
-    <script src="/scripts/index.js"></script>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

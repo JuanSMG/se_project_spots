@@ -45,7 +45,7 @@ function handleProfileFormSubmit(evt) {
   evt.preventDefault();
 
   profileHeadingEl.textContent = profileNameInput.value;
-  profileDescriptionEl.textcontent = profileDescriptionInput.value;
+  profileDescriptionEl.textContent = profileDescriptionInput.value;
 
   editProfileModal.classList.remove("modal_is-opened");
 }
@@ -55,8 +55,8 @@ profileFormElement.addEventListener("submit", handleProfileFormSubmit);
 function handleNewPostFormSubmit(evt) {
   evt.preventDefault();
 
-  console.log("newPostImageInput");
-  console.log("newPostCaptionInput");
+  console.log(newPostImageInput.value);
+  console.log(newPostCaptionInput.value);
 
   newPostModal.classList.remove("modal_is-opened");
 }
