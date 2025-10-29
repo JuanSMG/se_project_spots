@@ -1,5 +1,6 @@
 .card {
   max-width: 413px;
+  position: relative;
 }
 
 .card__description {
@@ -47,6 +48,32 @@
 
 .card__heart-button:hover {
   opacity: 100%;
+}
+
+.card__heart-button_click {
+  background-image: url(../images/heartliked.svg);
+  opacity: 1;
+}
+
+.card__heart-button_click:hover {
+  opacity: 0.4;
+}
+
+.card__delete-button {
+  background-image: url(../images/State=DeleteDefault.svg);
+  background-position: center;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: #0000004d;
+}
+
+.card__delete-button:hover {
+  background-image: url(../images/State=deleteHover.svg);
 }
 
 @media screen and (max-width: 630px) {
