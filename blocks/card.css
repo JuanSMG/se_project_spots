@@ -23,6 +23,11 @@
   display: block;
   margin-bottom: 12px;
   border-radius: 8px;
+  cursor: pointer;
+}
+
+.card__image:hover {
+  transform: scale(1.03);
 }
 
 .card__content {
@@ -42,7 +47,7 @@
   height: 20px;
   border: none;
   background-color: transparent;
-  opacity: 40%;
+  opacity: 0.4;
   cursor: pointer;
 }
 
@@ -70,6 +75,7 @@
   border-radius: 50%;
   border: none;
   background-color: #0000004d;
+  cursor: pointer;
 }
 
 .card__delete-button:hover {
@@ -88,7 +94,7 @@
     padding: 0;
   }
 
-  .card__discription {
+  .card__description {
     font-size: 16px;
     line-height: 1;
     text-overflow: ellipsis;
