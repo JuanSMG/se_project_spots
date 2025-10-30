@@ -76,6 +76,7 @@
   border: none;
   background-color: #0000004d;
   cursor: pointer;
+  z-index: 1;
 }
 
 .card__delete-button:hover {

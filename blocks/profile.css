@@ -88,7 +88,7 @@
   height: 12px;
 }
 
-.profile__discription {
+.profile__description {
   margin: 0;
   font-family: "Poppins", Arial, sans-serif;
   font-weight: 500;
@@ -140,7 +140,7 @@
     width: 100%;
   }
 
-  .profile__discription {
+  .profile__description {
     margin: 0 0 32px;
     display: -webkit-box;
     overflow: hidden;
