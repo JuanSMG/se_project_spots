@@ -197,7 +197,7 @@
     width: 100%;
   }
 
-  .modal__close-button_pre {
+  .modal__close-button_type_preview {
     top: -48px;
     right: 0;
   }
