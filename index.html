@@ -74,25 +74,37 @@
             aria-label="Close modal"
           ></button>
           <h2 class="modal__heading">Edit profile</h2>
-          <form class="modal__form">
+          <form class="modal__form" novalidate>
             <label for="profile-name-input" class="modal__label"
               >Name
               <input
                 id="profile-name-input"
                 type="text"
                 class="modal__input"
+                name="name"
                 placeholder="Type your name"
+                minlength="2"
+                maxlength="40"
                 required
-            /></label>
+              />
+              <span class="profile-name-input-error modal__input-error"></span>
+            </label>
             <label for="profile-description-input" class="modal__label"
               >Description
               <input
                 id="profile-description-input"
                 type="text"
                 class="modal__input"
+                name="description"
                 placeholder="Describe yourself"
+                minlength="2"
+                maxlength="200"
                 required
-            /></label>
+              />
+              <span
+                class="profile-description-input-error modal__input-error"
+              ></span>
+            </label>
             <button type="submit" class="modal__save-button">Save</button>
           </form>
         </div>
@@ -105,31 +117,41 @@
             aria-label="Close modal"
           ></button>
           <h2 class="modal__heading">New post</h2>
-          <form class="modal__form">
+          <form class="modal__form" novalidate>
             <label for="profile-image-input" class="modal__label"
               >Image link
               <input
                 id="profile-image-input"
                 type="url"
                 class="modal__input"
+                name="description"
                 placeholder="Paste a link to the picture"
                 required
-            /></label>
+              />
+              <span class="profile-image-input-error modal__input-error"></span>
+            </label>
             <label for="profile-caption-input" class="modal__label"
               >Caption
               <input
                 id="profile-caption-input"
                 type="text"
                 class="modal__input"
+                name="caption"
                 placeholder="Type your caption"
+                minlength="2"
+                maxlength="30"
                 required
-            /></label>
+              />
+              <span
+                class="profile-caption-input-error modal__input-error"
+              ></span>
+            </label>
             <button type="submit" class="modal__save-button">Save</button>
           </form>
         </div>
       </div>
       <div class="modal modal_background" id="Preview-image-modal">
-        <div class="modal__preview-container">
+        <div class="modal__container-preview">
           <button
             type="button"
             class="modal__close-button modal__close-button_type_preview"
@@ -140,6 +162,7 @@
         </div>
       </div>
     </div>
+    <script src="./scripts/validation.js"></script>
     <script src="./scripts/index.js"></script>
   </body>
 </html>

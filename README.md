@@ -1,4 +1,4 @@
-# Project 3: Spots
+# Project : Spots
 
 ### Overview
 
@@ -24,5 +24,7 @@ Juan Gonzalez
 The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
 
 MY link https://juansmg.github.io/se_project_spots/
+
+Check out [Sprint 6 Spots stage 9 project pitch video](https://drive.google.com/file/d/1UnFD62C2pORt6GTMo2zBz2KJ8LPuWKjq/view?usp=sharing), where I describe the stage 9 Spots project and the challenges I faced while coding it.
 
 Good luck and have fun!
