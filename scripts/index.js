@@ -135,10 +135,14 @@ function closeModal(modal) {
 }
 
 profileEditBtn.addEventListener("click", function () {
-  openModal(editProfileModal);
-
   profileNameInput.value = profileHeadingEl.textContent;
   profileDescriptionInput.value = profileDescriptionEl.textContent;
+  resetValidation(
+    profileFormElement,
+    [profileNameInput, profileDescriptionInput],
+    settings
+  );
+  openModal(editProfileModal);
 });
 
 profileCloseBtn.addEventListener("click", function () {

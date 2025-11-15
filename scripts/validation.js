@@ -2,7 +2,7 @@ const settings = {
   formSelector: ".modal__form",
   inputSelector: ".modal__input",
   submitButtonSelector: ".modal__save-button",
-  inactiveButtonClass: "modal__close-button_inactive",
+  inactiveButtonClass: "modal__save-button_inactive",
   inputErrorClass: "modal__input_type_error",
   errorClass: "modal__input-error_active",
 };
@@ -52,6 +52,12 @@ const toggleButtonState = (inputList, buttonElement, config) => {
 const disableButton = (buttonElement, config) => {
   buttonElement.disabled = true;
   buttonElement.classList.add(config.inactiveButtonClass);
+};
+
+const resetValidation = (formElement, inputList, config) => {
+  inputList.forEach((inputElement) => {
+    hideInputError(formElement, inputElement, config);
+  });
 };
 
 const setEventListeners = (formElement, config) => {

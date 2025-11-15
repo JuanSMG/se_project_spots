@@ -62,8 +62,9 @@
   opacity: 0.4;
 }
 
-.modal__close-button_inactive {
+.modal__save-button_inactive {
   opacity: 0.5;
+  pointer-events: none;
 }
 
 .modal__heading {
