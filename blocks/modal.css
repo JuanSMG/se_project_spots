@@ -46,7 +46,7 @@
 }
 
 .modal__close-button:hover {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .modal__close-button_type_preview {
@@ -55,11 +55,11 @@
   top: 0;
   right: -52.5px;
   background-image: url(../images/preview_close_icon.svg);
-  opacity: 100%;
+  opacity: 1;
 }
 
 .modal__close-button_pre:hover {
-  opacity: 40%;
+  opacity: 0.4;
 }
 
 .modal__close-button_inactive {
@@ -125,7 +125,7 @@
   display: block;
   margin-top: 8px;
   color: #ff0000b2;
-  font-family: Poppins;
+  font-family: Poppins, Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 110%;
@@ -172,7 +172,7 @@
   padding-left: 8px;
   margin: 8px 0 0;
   max-width: 214px;
-  font-family: Poppins;
+  font-family: Poppins, Arial, sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 120%;
