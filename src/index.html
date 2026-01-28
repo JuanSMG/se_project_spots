@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spots Project</title>
+    <meta
+      name="description"
+      content="Spots photo media project for TripleTen"
+    />
+    <meta
+      name="title"
+      property="og:title"
+      content="Juan Gonzalez Software Engineer Spots project"
+    />
+
+    <meta
+      property="og:type"
+      content="https://github.com/JuanSMG/se_project_spots"
+    />
+
+    <meta
+      name="image"
+      property="og:image"
+      content="images\spotsProjectscreenshot.jpg"
+    />
+
+    <meta
+      name="description"
+      property="og:description"
+      content="Spot Project site for Software Engineer training"
+    />
+
+    <meta name="author" content="Juan Gonzalez" />
+
+    <meta name="author" content="Juan M Gonzalez" />
+    <meta name="keywords" content="Photos, Spots, social media" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img
+          src="<%=require('./images/spots_logo.svg')%>"
+          alt="Spot logo"
+          class="header__logo"
+        />
+      </header>
+      <main class="content">
+        <section class="profile page__sections">
+          <img
+            src="<%=require('./images/avatar.jpg')%>"
+            alt="Photo of Bessie Coleman"
+            class="profile__avatar"
+          />
+          <div class="profile__container">
+            <h1 class="profile__heading">Bessie Coleman</h1>
+            <p class="profile__description">Civil Aviator</p>
+            <button type="button" class="profile__edit-button">
+              <img
+                src="<%=require('./images/edit_Icon.svg')%>"
+                alt="edit icon"
+                class="profile__button-editicon"
+              />Edit Profile
+            </button>
+          </div>
+          <button type="button" class="profile__add-button">
+            <img
+              src="<%=require('./images/plus_icon.svg')%>"
+              alt="add icon"
+              class="profile__button-icon"
+            />New Post
+          </button>
+        </section>
+        <section class="cards page__sections">
+          <ul class="cards__list">
+            <template id="card-template">
+              <li class="card">
+                <button type="button" class="card__delete-button"></button>
+                <img src="#" class="card__image" alt="" />
+                <div class="card__content">
+                  <h2 class="card__description"></h2>
+                  <button type="button" class="card__heart-button"></button>
+                </div>
+              </li>
+            </template>
+          </ul>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer__copyright">2023 © Spots</p>
+      </footer>
+      <div class="modal" id="edit-profile-modal">
+        <div class="modal__container">
+          <button
+            type="button"
+            class="modal__close-button"
+            aria-label="Close modal"
+          ></button>
+          <h2 class="modal__heading">Edit profile</h2>
+          <form class="modal__form" novalidate>
+            <label for="profile-name-input" class="modal__label"
+              >Name
+              <input
+                id="profile-name-input"
+                type="text"
+                class="modal__input"
+                name="name"
+                placeholder="Type your name"
+                minlength="2"
+                maxlength="40"
+                required
+              />
+              <span class="profile-name-input-error modal__input-error"></span>
+            </label>
+            <label for="profile-description-input" class="modal__label"
+              >Description
+              <input
+                id="profile-description-input"
+                type="text"
+                class="modal__input"
+                name="description"
+                placeholder="Describe yourself"
+                minlength="2"
+                maxlength="200"
+                required
+              />
+              <span
+                class="profile-description-input-error modal__input-error"
+              ></span>
+            </label>
+            <button type="submit" class="modal__save-button">Save</button>
+          </form>
+        </div>
+      </div>
+      <div class="modal" id="new-post-modal">
+        <div class="modal__container">
+          <button
+            type="button"
+            class="modal__close-button"
+            aria-label="Close modal"
+          ></button>
+          <h2 class="modal__heading">New post</h2>
+          <form class="modal__form" novalidate>
+            <label for="profile-image-input" class="modal__label"
+              >Image link
+              <input
+                id="profile-image-input"
+                type="url"
+                class="modal__input"
+                name="description"
+                placeholder="Paste a link to the picture"
+                required
+              />
+              <span class="profile-image-input-error modal__input-error"></span>
+            </label>
+            <label for="profile-caption-input" class="modal__label"
+              >Caption
+              <input
+                id="profile-caption-input"
+                type="text"
+                class="modal__input"
+                name="caption"
+                placeholder="Type your caption"
+                minlength="2"
+                maxlength="30"
+                required
+              />
+              <span
+                class="profile-caption-input-error modal__input-error"
+              ></span>
+            </label>
+            <button type="submit" class="modal__save-button">Save</button>
+          </form>
+        </div>
+      </div>
+      <div class="modal modal_background" id="Preview-image-modal">
+        <div class="modal__container-preview">
+          <button
+            type="button"
+            class="modal__close-button modal__close-button_type_preview"
+            aria-label="Close modal"
+          ></button>
+          <img src="#" alt="" class="modal__preview-image" />
+          <p class="modal__preview-caption">Golden Gate Bridge</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
