@@ -1,10 +1,17 @@
 {
   "name": "se_project_spots",
   "version": "1.0.0",
-  "description": "Spots Project webpack",
+  "description": "Spots project with webpack",
+  "homepage": "https://github.com/JuanSMG/se_project_spots#readme",
+  "bugs": {
+    "url": "https://github.com/JuanSMG/se_project_spots/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanSMG/se_project_spots.git"
+  },
   "license": "ISC",
   "author": "Juan Gonzalez",
-  "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
