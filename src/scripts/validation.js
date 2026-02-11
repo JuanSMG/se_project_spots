@@ -79,6 +79,7 @@ const setEventListeners = (formElement, config) => {
 export const enableValidation = (config) => {
   const formList = document.querySelectorAll(config.formSelector);
   formList.forEach((formElement) => {
+    if (formElement.classList.contains("modal__form_type_delete")) return;
     setEventListeners(formElement, config);
   });
 };
