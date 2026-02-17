@@ -25,6 +25,13 @@ The way you'll do this at work is by exporting images directly from Figma — we
 
 MY link https://juansmg.github.io/se_project_spots/
 
-Check out [Sprint 6 Spots stage 9 project pitch video](https://drive.google.com/file/d/1UnFD62C2pORt6GTMo2zBz2KJ8LPuWKjq/view?usp=sharing), where I describe the stage 9 Spots project and the challenges I faced while coding it.
+
+ ## Project Pitch Videos
+ 
+ Check out these videos, where I describe my project
+and some challenges I faced while building it:
+
+- [Final SPOTS Project Stage](https://www.loom.com/share/fb981c07855345f1a8760dc721bcaf86)
+- [Old Sprint 6 Spots project stage](https://drive.google.com/file/d/1UnFD62C2pORt6GTMo2zBz2KJ8LPuWKjq/view?usp=sharing)
 
 Good luck and have fun!

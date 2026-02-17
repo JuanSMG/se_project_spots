@@ -92,7 +92,7 @@
   max-width: 156px;
   width: 100%;
   background-color: #FF6565;
-  color: #fcf5e5;
+  color: #212121;
   border-radius: 8px;
   padding: 18px 32px;
   font-family: Poppins, Arial, sans-serif;
@@ -102,6 +102,10 @@
   border: none;
   cursor: pointer;
   gap: 20px;
+}
+
+.modal__delete-button:hover {
+  background-color: #FF3333;
 }
 
 .modal__cancel-button {
@@ -116,6 +120,11 @@
   line-height: 100%;
   border: 1px solid #212121;
   cursor: pointer;
+}
+
+.modal__cancel-button:hover {
+  background-color: #212121;
+  color: #fff;
 }
 
 .modal__save-button_inactive {

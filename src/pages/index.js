@@ -5,7 +5,7 @@ import {
   resetValidation,
   disableButton,
 } from "../scripts/validation.js";
-
+import { setButtontext } from "../utils/helpers.js";
 import  Api  from "../utils/Api.js";
 
 // const initialCards = [
@@ -134,12 +134,19 @@ let selectedCard, selectedCardId;
 
  function handleDeleteCardSubmit(evt) {
   evt.preventDefault();
+  const submitButton = evt.submitter;
+  setButtontext(submitButton, true, "Delete", "Deleting...");
+
+
   api.deleteCard(selectedCardId)
   .then(() => {
     selectedCard.remove();
     closeModal(deleteCardModal);
   })
-  .catch(console.error);
+  .catch(console.error)
+  .finally(() => {
+  setButtontext(submitButton, false, "Delete", "Deleting...")
+  });
  }
 
 
@@ -150,12 +157,14 @@ function handleDeleteCard(cardElement, cardId) {
 }
 
 function handleLike(evt, id) {
-  const isLiked = !evt.target.classList.contains("card__heart-button_click");
+  const likeBtnEl = evt.currentTarget;
+  const isLiked = likeBtnEl.classList.contains("card__heart-button_click");
   api.changeLike(id, isLiked)
-  .then((userLiked) => {
-  isLiked.classList.toggle("card__heart-button_click", userLiked);
-  })
-  .catch(console.error);
+    .then((updatedCard) => {
+      const userLiked = updatedCard.isLiked;
+      likeBtnEl.classList.toggle("card__heart-button_click", userLiked);
+    })
+    .catch(console.error);
 }
 
 
@@ -168,17 +177,18 @@ function getCardElement(data) {
   const cardImageEl = cardElement.querySelector(".card__image");
   const likeBtnEl = cardElement.querySelector(".card__heart-button");
 
-  likeBtnEl.addEventListener("click", (evt) =>
-   evt.target.classList.toggle("card__heart-button_click"));
 
   cardImageEl.src = data.link;
   cardImageEl.alt = data.name;
   cardTitleEl.textContent = data.name;
 
 
+   const isLiked = data.isLiked;
+   likeBtnEl.classList.toggle("card__heart-button_click", isLiked);
+
+
   likeBtnEl.addEventListener("click", (evt) =>
    handleLike(evt, data._id));
-
 
 
   const deleteBtnEl = cardElement.querySelector(".card__delete-button");
@@ -261,13 +271,19 @@ profileAvatarCloseBtn.addEventListener("click", function () {
 
 function handleAvatarFormSubmit(evt) {
   evt.preventDefault();
+  const submitButton = evt.submitter;
+  setButtontext(submitButton, true);
+
   api.editUserAvatar( profileAvatarInput.value )
   .then((data) => {
     profileAvatarEl.src = data.avatar;
     closeModal(profileAvatarModal);
     disableButton(profileAvatarSubmitButton, settings);
   })
-   .catch(console.error);
+   .catch(console.error)
+    .finally(() => {
+    setButtontext(submitButton, false);
+    });
 }
 
 profileAvatarForm.addEventListener("submit", handleAvatarFormSubmit);
@@ -275,6 +291,9 @@ profileAvatarForm.addEventListener("submit", handleAvatarFormSubmit);
 
 function handleAddNewCard(evt) {
   evt.preventDefault();
+  const submitButton = evt.submitter;
+  setButtontext(submitButton, true);
+
   api.addNewCard({ name: newPostCaptionInput.value, link: newPostImageInput.value })
   .then((cardData) => {
     const cardElement = getCardElement(cardData);
@@ -283,7 +302,10 @@ function handleAddNewCard(evt) {
     disableButton(newPostSubmitButton, settings);
     closeModal(newPostModal);
   })
-  .catch(console.error);
+  .catch(console.error)
+  .finally(() => {
+    setButtontext(submitButton, false);
+});
 }
 
 newPostFormElement.addEventListener("submit", handleAddNewCard);
@@ -292,6 +314,11 @@ newPostFormElement.addEventListener("submit", handleAddNewCard);
 function handleProfileFormSubmit(evt) {
   evt.preventDefault();
 
+  const submitButton = evt.submitter;
+  setButtontext(submitButton, true);
+
+
+
   api.editUserInfo({ name: profileNameInput.value, about: profileDescriptionInput.value })
   .then((userData) => {
     profileHeadingEl.textContent = userData.name;
@@ -299,7 +326,10 @@ function handleProfileFormSubmit(evt) {
     closeModal(editProfileModal);
     disableButton(profileSubmitButton, settings);
   })
-  .catch(console.error);
+  .catch(console.error)
+  .finally(() => {
+  setButtontext(submitButton, false);
+});
 }
 
 profileFormElement.addEventListener("submit", handleProfileFormSubmit);
