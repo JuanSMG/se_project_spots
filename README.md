@@ -34,4 +34,4 @@ and some challenges I faced while building it:
 - [Final SPOTS Project Stage](https://www.loom.com/share/fb981c07855345f1a8760dc721bcaf86)
 - [Old Sprint 6 Spots project stage](https://drive.google.com/file/d/1UnFD62C2pORt6GTMo2zBz2KJ8LPuWKjq/view?usp=sharing)
 
-Good luck and have fun!
+Thanks and have fun!
