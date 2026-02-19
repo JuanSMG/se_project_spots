@@ -247,6 +247,7 @@ function handleAvatarFormSubmit(evt) {
   api.editUserAvatar( profileAvatarInput.value )
   .then((data) => {
     profileAvatarEl.src = data.avatar;
+    profileAvatarForm.reset();
     closeModal(profileAvatarModal);
     disableButton(profileAvatarSubmitButton, settings);
   })

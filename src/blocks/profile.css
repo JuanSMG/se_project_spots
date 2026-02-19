@@ -25,6 +25,7 @@
   align-items: flex-end;
   justify-content: center;
   visibility: hidden;
+  color: #fff;
 }
 
 .profile__avatar-container:hover .profile__avatar-button {
@@ -34,6 +35,7 @@
   border-radius: 8px;
   background-color: #00000080;
   border: none;
+  gap: 8px;
 }
 
 
